@@ -1,0 +1,211 @@
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.blur {
+    background-image: url("../img/kalnas.jpg");
+    background-repeat: no-repeat;
+    background-size: 106vw 107vh;
+    filter: blur(14px);
+    width: calc(100% + 30px);
+    height: calc(100vh + 30px);
+    margin-top: -13px;
+    margin-left: -13px;
+}
+
+.container {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-column {
+    float: left;
+    width: 25%;
+    height: 70vh;
+    margin: 15vh 0 15vh 20%;
+    color: white;
+    background-color: #028CAD;
+    background-image: url("../img/kalnas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+    position: relative;
+    min-height: 280px;
+}
+
+#rodykle {
+    position: absolute;
+    display: none;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.dropdown:hover .paaiskinimas {
+    display: inline;
+}
+
+.paaiskinimas {
+    display: none;
+    color: black;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 13px;
+}
+
+h1 {
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    right: 10px;
+    font-size: 6.5vh; 
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-family: inherit;
+}
+
+a {
+    color: #ECCEFF;
+    text-decoration: underline;
+    font-family: inherit;
+}
+
+p {
+    display: inline;
+    color: #ECCEFF;
+}
+
+footer {
+    font-size: 2.1vh;
+    position: absolute;
+    bottom: 23px;
+    letter-spacing: 0.1px;
+    left: 65px;
+    right: 10px;
+}
+
+#right-column {
+    float: left;
+    width: 35%;
+    height: 76vh;
+    margin: 12vh 20% 12vh 0;
+    background-color: white;
+    position: relative;
+}
+
+.mygtukas {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.dropdown2:hover .paaiskinimas2 {
+    display: inline;
+}
+
+.paaiskinimas2 {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    font-size: 13px;
+}
+
+form {
+    padding: 10vh 5vw 0 5vw;
+    height: 100%;
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-row {
+    display: inline-block;
+    margin-bottom: 4vh;
+}
+
+.form-row:last-of-type {
+    margin-bottom: 0;
+}
+
+.form-row > label {
+    display: block;
+    padding: 0 0 0.5vh 0.2vw;
+    font-size: 0.9vw;
+    line-height: 3vh;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+.form-row > input {
+    display: block;
+    margin-bottom: 1.5vh;
+    width: 25vw;
+    font-size: 1.2vw;
+    line-height: 4vh;
+    border: none;
+    font-style: italic;
+    border-bottom: 1.5px solid #ccc;
+  }
+
+.form-row > button {
+    float: left;
+    padding: 1.2vh 3.5vw 1.2vh 3.5vw;
+    margin: 8px 0 0 0;
+    font-size: 2.2vh;
+    letter-spacing: 0.5px;
+    font-weight: bold; 
+    line-height: 20px;
+    border: 1px solid #0164DB;
+    border-radius: 20px;
+    background-color: #015cda;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+ .form-row > span {
+    float: left;
+    padding: 1vh;
+    margin: 8px 1vw 0 2vw; 
+    font-size: 2.1vh;
+    line-height: 20px;
+  }
+
+.form-row > a {
+    float: left;
+    font-size: 2.1vh;
+    padding: 1vh;
+    line-height: 20px;
+    margin-top: 8px;
+    color: #015cda;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+a:hover {
+    color: rgb(255, 60, 60);
+}
+
+.form-row > button:hover {
+    background-color: #f7e9ff;
+    color:rgb(255, 60, 60) ;
+}
+
+input:focus {
+    background-color: #f7e9ff;
+}

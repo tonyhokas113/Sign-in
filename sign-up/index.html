@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+    <link rel="icon" type="image/png" href="/img/icon.png">    
+    <link rel="stylesheet" href="/css/stilius.css">
+</head>
+
+<body>
+<div class="blur"></div>
+    <main class="container">
+        <div class="left-column">
+            <div class="dropdown">
+                    <img id="rodykle" onclick="myotherFunction()" src="/img/rodykle.png" alt="->" width="18px" height="18px">
+                <div class="paaiskinimas" >
+                    <span>Atidaryti formą</span>
+                </div>
+            </div>
+                <h1>Sign Up</h1>
+            <footer>
+                <a href="#">Privacy policy</a>
+                <p>&</p>
+                <a href="#">terms of service</a>
+            </footer>
+        </div>
+        <div id="right-column">
+            <div class="dropdown2">
+                    <img class="mygtukas" onclick="myFunction()" src="/img/uzdaryti.jpg" alt="X" width="18px" height="18px">
+                <div class="paaiskinimas2">
+                    <span>Uždaryti formą</span>
+                </div>
+            </div>
+            <form>
+                    <div class="form-row">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" placeholder="Your username" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Password</label>
+                        <input id="pass" type="password" placeholder="Your password" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="repass">Repeat password</label>
+                        <input id="repass" type="password" placeholder="Repeat your password" required>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit">Get started</button>
+                        <span>or</span>
+                        <a href="/sign-in/index.html" class="signin">Sign in</a>
+                    </div>  
+            </form>
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            document.getElementById("right-column").style.display="none";
+            document.getElementById('rodykle').style.display='initial';
+        }
+        function myotherFunction() {
+            document.getElementById("right-column").style.display="initial";
+            document.getElementById('rodykle').style.display='none';
+        }
+    </script>
+</body>
+
+</html>
